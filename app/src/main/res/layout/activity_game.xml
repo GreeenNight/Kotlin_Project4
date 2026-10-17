@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<layout>-->
+
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="Data"-->
+<!--            type="sl.kingdom.project4.Data" />-->
+<!--    </data>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/arena1"
+        tools:context=".GameActivity"
+        android:id="@+id/Container">
+
+        <FrameLayout
+            android:id="@+id/shop_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+<!--        </FrameLayout>-->
+
+        <ImageButton
+            android:id="@+id/ball1"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634"
+            app:srcCompat="@drawable/ball1" />
+
+        <ImageButton
+            android:id="@+id/ball2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.629"
+            app:srcCompat="@drawable/ball2" />
+
+        <ImageButton
+            android:id="@+id/ball3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634"
+            app:srcCompat="@drawable/ball3" />
+
+        <ImageButton
+            android:id="@+id/ball4"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634"
+            app:srcCompat="@drawable/ball4" />
+
+        <ImageButton
+            android:id="@+id/ball5"
+            android:layout_width="190dp"
+            android:layout_height="170dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.634"
+            app:srcCompat="@drawable/ball5" />
+
+        <ImageButton
+            android:id="@+id/ball6"
+            android:layout_width="140dp"
+            android:layout_height="150dp"
+            android:background="@null"
+            android:contentDescription="Kick the ball!"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.628"
+            app:srcCompat="@drawable/ball6" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:shadowColor="#000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="3"
+            android:text="Tap Points(TP): 0"
+            android:textColor="#10BF03"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.853"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" />
+
+        <Button
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOP"
+            android:background="@drawable/rounded_button2"
+            app:backgroundTint="#02AFB5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.855" />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Purchases"
+        android:background="@drawable/rounded_button2"
+        app:backgroundTint="#02B520"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--</layout>-->
